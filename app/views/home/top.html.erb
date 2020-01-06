@@ -1,0 +1,13 @@
+
+<main>
+  <h1>Check a Porker Hand</h1>
+<%= form_tag("/home/create") do %>
+  <p>
+   <!-- topアクションで定義した@contentの値はビューで閲覧できるので以下のテキストエリアに表示@contentは<%= %>で囲む-->
+    <textarea name="content" ><%= @content %></textarea>
+  </p>
+    <p>
+      <input type="submit" value="Check">
+    </p>
+  <% end %>
+</main>
